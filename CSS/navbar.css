@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Navbar</title>
-    <link rel="stylesheet" href="C:\Users\RAL\Documents\adrian\MarketSystem\font-awesome-4.7.0/css/font-awesome.min.css">
-    <style>
        *{
            margin: 0;
            padding: 0;
@@ -95,27 +86,3 @@
                 right: 0;
             }
        }
-    </style>
-</head>
-<body>
-    <div class="header">
-        <h2 class="logo">MarketSystem</h2>
-        <input type="checkbox" id="chk">
-        <label for="chk" class="show-menu-btn">
-            <i class="fa fa-th-large"></i>
-        </label>
-        <ul class="menu">
-            <a href="#">Produtos</a>
-            <a href="#">Preços</a>
-            <a href="#">Localização</a>
-            <a href="#">Fale conosco</a>
-            <label for="chk" class="hide-menu-btn">
-                <i class="fa fa-times"></i>
-            </label>
-        </ul>
-    </div>
-    <div class="content">
-
-    </div>
-</body>
-</html>
