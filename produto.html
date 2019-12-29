@@ -17,8 +17,12 @@
        .header{
            height: 100px;
            background: #FFF30E;
-           padding: 0 20px;
+           padding: 0 10px;
        }
+
+        .icon{
+            float: left;
+        }       
        
        .logo{
            line-height: 100px;
@@ -68,7 +72,7 @@
        }
 
        .container{
-           width: 800px;
+           width: 1000px;
            margin: auto;
        }
 
@@ -98,7 +102,7 @@
        }
 
        .title h1{
-           max-width: 400px;
+           max-width: 660px;
            font-size: 18pt;
        }
 
@@ -107,13 +111,54 @@
             float: left;
             width: auto;
             padding-left: 40px;
-            padding-top: 20px;
+            padding-top: 10px;
             color: grey;
         }
 
         .desc p{
-            max-width: 400px;
+            width: 660px;
             font-size: 16px;
+        }
+
+        .text_price{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+
+        .text_price h1{
+            width: 60px;
+            color: grey;
+            font-size: 18px;
+            padding-top: 12px;
+        }
+
+        .price{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-top: 20px;
+        }
+
+        .price h1{
+            font-size: 30px;
+            width: 160px;
+            font-style: italic;
+        }
+
+        .desconto{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-top: 32px;
+        }
+
+        .desconto h1{
+            font-size: 14px;
+            background: red;
+            font-style: italic;
         }
 
        @media screen and (max-width: 800px){
@@ -159,6 +204,7 @@
 <body>
     <!--Navbar-->
     <div class="header">
+        <img src="./images/market_system.png" alt="market system" width="100" height="100" class="icon">
         <h2 class="logo">MarketSystem</h2>
         <input type="checkbox" id="chk">
         <label for="chk" class="show-menu-btn">
@@ -188,15 +234,22 @@
         
         <!--Product name-->
         <div class="title">
-            <h1>Xiaomi - Redmi Note 7 - 48MP Camera (Global Version)</h1>
+            <h1>Xiaomi Mi Note 10 (CC9 Pro) 108MP Penta Camera Mobile Phone Global Version Online Smartphone - Green</h1>
         </div>
         <!--Product description-->
         <div class="desc">
-            <p>6GB RAM 128GB ROM 48.0MP + 5.0MP Rear Camera Fingerprint Sensor</p>
+            <p>The World's First 108MP Xiaomi (Mi Note 10) Penta Camera Phone: 6.47 inch 4G Phablet 6GB RAM 128GB ROM 5260mAh Battery Fast Charging.</p>
         </div>
-    </div>
         <!--Product price-->
-    
+        <div class="text_price">
+            <h1>Preço:</h1>
+        </div>
+        <div class="price">
+            <h1>R$ 1.500,00</h1>
+        </div>
+        <div class="desconto">
+            <h1>10% OFF.</h1>
+        </div>
         <!--Especifications selection [color/size/quantity]-->
     
         <!--Buy/add to cart button-->
@@ -206,6 +259,7 @@
         <!--Comments-->
     
     <!--Container Close-->
+        </div>
     </div>
 </body>
 </html>
