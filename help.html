@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fale conosco</title>
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- POPPER.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <!-- BOOTSTRAP.JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <!-- FONTE DO ADRIAN KKJ -->
     <link rel="stylesheet" href="C:\Users\RAL\Documents\adrian\MarketSystem\font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
+    <title>Fale conosco</title>
+    
+    <!-- PAGE STYLES -->
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/help.css">
+    
+    <!-- PAGE FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+
 </head>
 <body>
+    
     <div class="header">
-        <h2 class="logo">MarketSystem</h2>
+        <a href="index.html" clas="navbar-brand">
+            <img src="./images/market_system.png" alt="market system" width="100" height="100">
+        </a>
         <input type="checkbox" id="chk">
         <label for="chk" class="show-menu-btn">
             <i class="fa fa-th-large"></i>
@@ -25,8 +52,59 @@
             </label>
         </ul>
     </div>
-    <div class="content">
+    <!-- <h1>Fale conosco</h1>
+        <h2>Em quê podemos lhe ajudar?</h2> -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Seja bem-vindo à área de fale conosco</h1>
+            </div>
+            
+        </div>
+        <div class="card">
+            <div class="card-header">Preencha seus dados</div>
+            <div class="card-body">
+                <!-- Tel us form -->
+                <form action="#" method="POST" class="form-group">
+                    <!-- Name field -->
+                    <label for="name">Nome:</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Digite seu nome" maxlength="256"><br>
+                    
+                    <!-- Email field -->
+                    <label for="name">E-mail:</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu e-mail" maxlength="256"><br>
+                    
+                    <!-- Number field -->
+                    <label for="name">Número de telefone:</label>
+                    <input class="form-control" type="email" name="email" id="number" placeholder="Digite seu número" maxlength="256"><br>
 
+                    <!-- Text area field -->
+                    <textarea class="form-control" name="message" id="message" rows="10">Digite sua mensagem</textarea><br>
+
+
+                    <!-- Radios div -->
+                    <div class="form-check">
+                        <!-- Male radio -->
+                        <input class="custom-check-input" type="radio" name="sex" value="male" id="male">
+                        <!-- Male label -->
+                        <label class="form-check-label" for="male">
+                            Masculino
+                        </label>
+
+                        <!-- Female radio -->
+                        <input class="custom-check-input" type="radio" name="sex" value="female" id="female">
+                        <!-- Female label -->
+                        <label class="form-check-label" for="female">
+                            Feminino
+                        </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <input type="submit" name="submit" value="ENVIAR" class="btn btn-primary"><br>
+                </form>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
