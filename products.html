@@ -192,6 +192,33 @@
             font-weight: bold;
         }
 
+        .color{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-left: 40px;
+            padding-top: 20px;
+            color: grey;
+        }
+
+        .color h1{
+            width: 40px;
+            color: grey;
+            font-size: 18px;
+            padding-top: 12px;
+        }
+
+        .inputcol{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-top: 32px;
+        }
+
+        .inputcol input{
+            width: 30px;
+        }
+
        @media screen and (max-width: 800px){
             .show-menu-btn,.hide-menu-btn{
                 display: block;
@@ -292,6 +319,14 @@
         </div>
         <div class="inputnumb">
             <input type="number" name="qnt" min="1" max="9" step="1" value="1">
+        </div>
+        <div class="color">
+            <h1>
+                Cor:
+            </h1>
+        </div>
+        <div class="inputcol">
+            <input type="color" name="col" value="black">
         </div>
         <!--Buy/add to cart button-->
     
