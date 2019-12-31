@@ -74,7 +74,7 @@
        }
 
        .container{
-           width: 1000px;
+           width: 1100px;
            margin: auto;
        }
 
@@ -86,7 +86,7 @@
        .image{
             display: table-cell;
             float: left;
-            max-width: 300px;
+            max-width: 400px;
             
        }
        
@@ -161,6 +161,35 @@
             font-size: 14px;
             background: red;
             font-style: italic;
+        }
+
+        .colsizqnt{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-left: 40px;
+            padding-top: 20px;
+            color: grey;
+        }
+
+        .colsizqnt h1{
+            width: 100px;
+            color: grey;
+            font-size: 18px;
+            padding-top: 12px;
+        }
+
+        .inputnumb{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-top: 32px;
+        }
+
+        .inputnumb input{
+            width: 30px;
+            font-size: 14px;
+            font-weight: bold;
         }
 
        @media screen and (max-width: 800px){
@@ -255,14 +284,22 @@
             <h1>10% OFF.</h1>
         </div>
         <!--Especifications selection [color/size/quantity]-->
-    
+        <div class="colsizqnt">
+            <h1>
+                Quantidade:
+            </h1>
+            
+        </div>
+        <div class="inputnumb">
+            <input type="number" name="qnt" min="1" max="9" step="1" value="1">
+        </div>
         <!--Buy/add to cart button-->
     
         <!--Favorite button-->
     
         <!--Comments-->
     
-    <!--Container Close-->''
+    <!--Container Close-->
         </div>
     </div>
 </body>
