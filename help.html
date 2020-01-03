@@ -52,58 +52,112 @@
             </label>
         </ul>
     </div>
-    <!-- <h1>Fale conosco</h1>
-        <h2>Em quê podemos lhe ajudar?</h2> -->
+
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Seja bem-vindo à área de fale conosco</h1>
-            </div>
-            
-        </div>
-        <div class="card">
-            <div class="card-header">Preencha seus dados</div>
-            <div class="card-body">
-                <!-- Tel us form -->
-                <form action="#" method="POST" class="form-group">
-                    <!-- Name field -->
-                    <label for="name">Nome:</label>
-                    <input class="form-control" type="text" name="name" id="name" placeholder="Digite seu nome" maxlength="256"><br>
-                    
-                    <!-- Email field -->
-                    <label for="name">E-mail:</label>
-                    <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu e-mail" maxlength="256"><br>
-                    
-                    <!-- Number field -->
-                    <label for="name">Número de telefone:</label>
-                    <input class="form-control" type="email" name="email" id="number" placeholder="Digite seu número" maxlength="256"><br>
+        <form action="./" method="POST">
+            <div class="card col">
+                <div class="card-header bg-primary-purple">
+                    Preencha seus dados
+                </div>
+                <div class="card-body">
 
-                    <!-- Text area field -->
-                    <textarea class="form-control" name="message" id="message" rows="10">Digite sua mensagem</textarea><br>
+                    <div class="card col">
+                
+                        <div class="card-header bg-secondary-purple">
+                            Dados pessoais    
+                        </div>
+        
+                        <div class="card-body">
+        
+                            <div class="row">
+        
+                                <div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label for="name">Nome</label>
+                                    <input class="form-control" type="text" name="name" id="name" placeholder="Digite seu sobrenome">
+                                </div>
 
+                                <div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label for="last-name">Sobrenome</label>
+                                    <input class="form-control" type="text" name="name" id="last-name" placeholder="Digite seu sobrenome">
+                                </div>                                
 
-                    <!-- Radios div -->
-                    <div class="form-check">
-                        <!-- Male radio -->
-                        <input class="custom-check-input" type="radio" name="sex" value="male" id="male">
-                        <!-- Male label -->
-                        <label class="form-check-label" for="male">
-                            Masculino
-                        </label>
-
-                        <!-- Female radio -->
-                        <input class="custom-check-input" type="radio" name="sex" value="female" id="female">
-                        <!-- Female label -->
-                        <label class="form-check-label" for="female">
-                            Feminino
-                        </label>
+                                <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label for="cell-number">Número celular</label>
+                                    <input class="form-control" type="text" name="cell-number" id="cell-number" placeholder="Digite seu número de celular">
+                                </div>
+                                
+                                <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label for="tel-number">Número telefone</label>
+                                    <input class="form-control" type="text" name="tel-number" id="tel-number" placeholder="Digite seu número de telefone">
+                                </div>
+                                
+                                
+                                <div class="form-group col-12 col-sm-8 col-md-9 col-lg-10 col-xl-10">
+                                    <label for="email">E-mail</label>
+                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                                </div>
+                                <div class="col form-group col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2" id="radios">
+                                    <p>Sexo</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="sex" id="male" value="male" checked="checked">
+                                        <label class="form-check-lab" for="male">
+                                            Masculino
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="sex" id="female" value="male">
+                                        <label class="form-check-lab" for="female">
+                                            Feminino
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
                     </div>
 
-                    <!-- Submit button -->
-                    <input type="submit" name="submit" value="ENVIAR" class="btn btn-primary"><br>
-                </form>
+                    <div class="card col">
+                        
+                        <div class="card-header bg-secondary-purple">
+                            Endereço
+                        </div>
+        
+                        <div class="card-body">
+                            
+                            
+                            <div class="row">
+        
+                                <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                                    <label for="email">CEP</label>
+                                    <input class="form-control" type="text" name="adress" id="adress" placeholder="Digite endereço">
+                                </div>    
+                                
+                                <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                    <label for="email">Cidade</label>
+                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                                </div>
+                                <div class="form-group col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                                    <label for="email">Estado</label>
+                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                                </div>
+                                
+                                <div class="form-group col-8 col-sm-6 col-md-5 col-lg-6 col-xl-6">
+                                    <label for="email">Logadouro</label>
+                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                                </div>    
+                                <div class="form-group col-4 col-sm-2 col-md-3 col-lg-2 col-xl-2">
+                                    <label for="email">Número</label>
+                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite o número da sua casa">
+                                </div>    
+                            </div>
+                            
+                                
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 
 </body>
