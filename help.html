@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
     <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
     <title>Fale conosco</title>
     
     <!-- PAGE STYLES -->
@@ -39,29 +39,72 @@
             <img src="./images/market_system.png" alt="market system" width="100" height="100" class="icon">
         </a>   
         <h2 class="logo">MarketSystem</h2>
+
         <input type="checkbox" id="chk">
         <label for="chk" class="show-menu-btn">
             <i class="fa fa-th-large"></i>
         </label>
+
         <ul class="menu">
             <a href="index.html">Início</a>
             <a href="products.html">Produtos</a>
             <a href="prices.html">Preços</a>
             <a href="location.html">Localização</a>
+
             <label for="chk" class="hide-menu-btn">
                 <i class="fa fa-times"></i>
+                
             </label>
         </ul>
     </div>
-
+    
     <div class="container">
-        <form action="./" method="POST">
-            <div class="card col">
-                <div class="card-header bg-primary-purple">
-                    Preencha seus dados
-                </div>
-                <div class="card-body">
+        
+        <nav class="bradcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Fale Conosco</li>
+            </ol>
+        </nav>
 
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Área de entrega</h1>
+                <p>Nesta área você pode preencher seus dados para a entrega do produto </p>
+                <p>
+                    <!-- <a class="btn btn-primary btn-lg">Ver mais</a> -->
+                </p>
+            </div>
+        </div>
+        
+        <!-- <div class="card ">
+
+            <div class="card-body">
+                <div class="card-title">
+                    
+                </div>
+                <div class="card-tilte ">
+                    Nesta área você pode preencher seus dados para que possamos entregar determinado produto
+                </div>
+            </div>
+
+        </div> -->
+
+
+        <form action="./" method="POST">
+            
+            <div class="card col">
+                    
+                    <div class="card-header bg-primary-purple">
+                        <i class="far fa-address-card"></i>
+                        Preencha seus dados
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="alert alert-warning fade show" id="warning">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            Campos com '<span>*</span>' <strong>devem</strong> ser preenchidos
+                        </div>
                     <div class="card col">
                 
                         <div class="card-header bg-secondary-purple">
@@ -72,49 +115,41 @@
         
                             <div class="row">
         
-                                <div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="name">Nome</label>
-                                    <input class="form-control" type="text" name="name" id="name" placeholder="Digite seu sobrenome">
+                                <div class="form-group col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                                    <label for="name">Nome <span>*</span></label>
+                                    <input class="form-control" type="text" name="name" id="name" placeholder="Digite seu primeiro nome">
                                 </div>
 
-                                <div class="form-group col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="last-name">Sobrenome</label>
+                                <div class="form-group col-7 col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                                    <label for="last-name">Sobrenome <span>*</span></label>
                                     <input class="form-control" type="text" name="name" id="last-name" placeholder="Digite seu sobrenome">
                                 </div>                                
 
+                                <div class="form-group col-5 col-sm-2 col-md-2 col-lg-2 col-">
+                                    <label for="state">Sexo <span>*</span></label>
+                                    <select class="form-control" name="state" id="state">
+                                        <option value="choose" disabled selected>Selecione</option>
+                                        <option value="male">Masculino</option>
+                                        <option value="female">Feminino</option>
+                                    </select>
+                                </div>
+
                                 <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="cell-number">Número celular</label>
-                                    <input class="form-control" type="text" name="cell-number" id="cell-number" placeholder="Digite seu número de celular">
+                                    <label for="cellphone-number">Número celular <span>*</span></label>
+                                    <input class="form-control" type="text" name="cellphone-number" id="cellphone-number" placeholder="Digite seu número de celular">
                                 </div>
                                 
                                 <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="tel-number">Número telefone</label>
-                                    <input class="form-control" type="text" name="tel-number" id="tel-number" placeholder="Digite seu número de telefone">
+                                    <label for="telephone-number">Número telefone </label>
+                                    <input class="form-control" type="text" name="telephone-number" id="telephone-number" placeholder="Digite seu número de telefone">
                                 </div>
                                 
-                                
-                                <div class="form-group col-12 col-sm-8 col-md-9 col-lg-10 col-xl-10">
-                                    <label for="email">E-mail</label>
+                                <div class="form-group col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                    <label for="email">E-mail <span>*</span></label>
                                     <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
                                 </div>
-                                <div class="col form-group col-12 col-sm-4 col-md-3 col-lg-2 col-xl-2" id="radios">
-                                    <p>Sexo</p>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="sex" id="male" value="male" checked="checked">
-                                        <label class="form-check-lab" for="male">
-                                            Masculino
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="sex" id="female" value="male">
-                                        <label class="form-check-lab" for="female">
-                                            Feminino
-                                        </label>
-                                    </div>
-                                </div>
-                                
+
                             </div>
-                            
                         </div>
                     </div>
 
@@ -125,37 +160,75 @@
                         </div>
         
                         <div class="card-body">
-                            
-                            
+
                             <div class="row">
         
                                 <div class="form-group col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-                                    <label for="email">CEP</label>
-                                    <input class="form-control" type="text" name="adress" id="adress" placeholder="Digite endereço">
+                                    <label for="cep">CEP <span>*</span></label>
+                                    <input class="form-control" type="text" name="cep" id="cep" maxlength="8" placeholder="Digite seu cep">
                                 </div>    
                                 
-                                <div class="form-group col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                    <label for="email">Cidade</label>
-                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
-                                </div>
-                                <div class="form-group col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2">
-                                    <label for="email">Estado</label>
-                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                                <div class="form-group col-7 col-sm-5 col-md-5 col-lg-6 col-xl-6">
+                                    <label for="city">Cidade <span>*</span></label>
+                                    <input class="form-control" type="text" name="city" id="city" placeholder="Digite sua cidade">
                                 </div>
                                 
-                                <div class="form-group col-8 col-sm-6 col-md-5 col-lg-6 col-xl-6">
-                                    <label for="email">Logadouro</label>
-                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite seu e-mail">
+                                <div class="form-group col-5 col-sm-3 col-md-3 col-lg-2 col-">
+                                    <label for="state">Estado <span>*</span></label>
+                                    <select class="form-control" name="state" id="state">
+                                        <option value="choose" disabled selected>Selecione</option>
+                                        <option value="sp">SP</option>
+                                        <option value="sc">SC</option>
+                                        <option value="rj">RJ</option>
+                                        <option value="mg">MG</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group col-12 col-sm-7 col-md-4 col-lg-6 col-xl-6">
+                                    <label for="district">Bairro <span>*</span></label>
+                                    <input class="form-control" type="text" name="district" id="district" placeholder="Digite seu e-mail">
+                                </div>
+
+                                <div class="form-group col-12 col-sm-5 col-md-6 col-lg-4 col-xl-4">
+                                    <label for="adress">Logradouro <span>*</span></label>
+                                    <input class="form-control" type="text" name="adress" id="adress" placeholder="Digite seu e-mail">
                                 </div>    
-                                <div class="form-group col-4 col-sm-2 col-md-3 col-lg-2 col-xl-2">
-                                    <label for="email">Número</label>
-                                    <input class="form-control" type="text" name="email" id="email" placeholder="Digite o número da sua casa">
+
+                                <div class="form-group col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2">
+                                    <label for="house-number">Número</label>
+                                    <input class="form-control" type="text" name="house-number" id="house-number" placeholder="Digite o número da sua casa">
+                                </div> 
+
+                                <div class="form-group col-8 col-sm-4 col-md-5 col-lg-5 col-xl-5">
+                                    <label for="acomplishment">Complemento</label>
+                                    <input class="form-control" type="text" name="acomplishment" id="acomplishment" placeholder="Digite o complemento">
+                                </div>  
+
+                                <div class="form-group col-12 col-sm-5 col-md-7 col-lg-7 col-xl-7">
+                                    <label for="reference">Referência</label>
+                                    <input class="form-control" type="text" name="reference" id="reference" placeholder="Digite um ponto de referência">
                                 </div>    
+
                             </div>
-                            
-                                
                         </div>
                     </div>
+
+                    <div class="card col">
+                        <div class="card-header bg-secondary-purple">
+                            Mensagem
+                        </div>
+                        <div class="card-body">
+                            <label for="message">Observação</label>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="4" placeholder="Deixe uma observação" ></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-col">
+                        <input class="btn btn-primary btn-lg btn-block" type="submit" value="Enviar" >
+                    </div>
+
                 </div>
             </div>
         </form>

@@ -114,8 +114,21 @@ p{
 }
 
 .bg-primary-purple{
-    background-color: rgb(184, 0, 184);
+    background-color: rgb(189, 110, 235);
+}
+.bg-primary-yellow{
+    background-color: #FFF30F;
 }
 .bg-secondary-purple{
-    background-color: rgb(211, 123, 211);
+    background-color: rgb(220, 160, 255);
+}
+
+span{
+    color: red;
+}
+
+.jumbotron{
+    /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.178);
+    border: 2px solid rgb(255, 242, 0);
+    padding: 50px; */
 }
