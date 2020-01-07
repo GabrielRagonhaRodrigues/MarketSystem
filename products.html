@@ -113,7 +113,8 @@
             float: left;
             width: auto;
             padding-left: 40px;
-            padding-top: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             color: grey;
         }
 
@@ -159,7 +160,7 @@
 
         .desconto h1{
             font-size: 14px;
-            background: red;
+            background: #ff2d2d;
             font-style: italic;
         }
 
@@ -217,6 +218,38 @@
 
         .inputcol input{
             width: 30px;
+        }
+
+        .buybut{
+            display: table-cell;
+            float: left;
+            width: auto;
+            padding-top: 60px;
+            padding-left: 50px;
+        }
+
+        .buybut button{
+            width: 600px;
+            font-weight: bold;
+            font-size: 18pt;
+            font-style: italic;
+            background: #ff2d2d;
+            border: 1px solid black;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+        .terms{
+            display: table-cell;
+            float: left;
+            padding-top: 5px;
+            width: 700px;
+            text-align: center;
+        }
+
+        .terms a{
+            color: gray;
+            text-decoration: none; 
         }
 
        @media screen and (max-width: 800px){
@@ -326,12 +359,16 @@
             </h1>
         </div>
         <div class="inputcol">
-            <input type="color" name="col" value="black">
+            <input type="color" name="col" value="#00707c">
         </div>
         <!--Buy/add to cart button-->
-    
+        <div class="buybut">
+            <button class="buy">Comprar</button>
+        </div>
         <!--Favorite button-->
-    
+        <div class="terms">
+            <a href="#">Termos e condições do usuário.</a>
+        </div>
         <!--Comments-->
     
     <!--Container Close-->
