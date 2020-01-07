@@ -8,11 +8,12 @@
     height: 100px;
     background: #FFF30E;
     padding: 0 10px;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.301);
 }
 
- .icon{
-     float: left;
- }       
+.icon{
+    float: left;
+}       
 
 .logo{
     line-height: 100px;
@@ -34,10 +35,10 @@
 }
 
 .show-menu-btn,.hide-menu-btn{
-     transition: 0.4s;
-     font-size: 30px;
-     cursor: pointer;
-     display: none;
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
 }
 
 .show-menu-btn{
