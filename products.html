@@ -4,309 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Produto</title>
+    <link rel="stylesheet" type="text/css" href="CSS/products.css">
+    <link rel="stylesheet" type="text/css" href="CSS/navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/footer.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!--FAVICON-->
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
-    <style>
-       *{
-           margin: 0;
-           padding: 0;
-           font-family: 'Source Sans Pro', sans-serif;
-       }
-
-       .header{
-           height: 100px;
-           background: #FFF30E;
-           padding: 0 10px;
-       }
-
-        .icon{
-            float: left;
-        }       
-       
-       .logo{
-           line-height: 100px;
-           float: left;
-           text-transform: uppercase;
-       }
-
-       .menu{
-           float: right;
-           line-height: 100px;
-       }
-
-       .menu a{
-           color: black;
-           text-transform: uppercase;
-           text-decoration: none;
-           padding: 0 10px;
-           transition: 0.4s;
-       }
-
-       .show-menu-btn,.hide-menu-btn{
-            transition: 0.4s;
-            font-size: 30px;
-            cursor: pointer;
-            display: none;
-       }
-
-       .show-menu-btn{
-           float: right;
-       }
-
-       .show-menu-btn i{
-           line-height: 100px;
-       }
-
-       .menu a:hover,
-       .show-menu-btn:hover,
-       .hide-menu-btn:hover{
-            color: white;
-            background: black;
-       }
-
-       #chk{
-           position: absolute;
-           visibility: hidden;
-           z-index: -1111;
-       }
-
-       .container{
-           width: 1100px;
-           max-height: auto;
-           margin: auto;
-       }
-
-       .conteudo{
-           display: table;
-           margin-top: 20px;
-       }
-
-       .image{
-            display: table-cell;
-            float: left;
-            max-width: 400px;
-            
-       }
-       
-       .image img{
-        max-width: 100%;
-        max-height: auto;
-        border: rgb(185, 185, 185) solid 1.5px;
-       }
-
-       .title{
-            display: table-cell;
-            float: left;
-            width: auto;
-            margin-left: 40px;
-       }
-
-       .title h1{
-           max-width: 660px;
-           font-size: 18pt;
-       }
-
-       .desc{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-left: 40px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            color: grey;
-        }
-
-        .desc p{
-            width: 660px;
-            font-size: 16px;
-        }
-
-        .text_price{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-left: 40px;
-            padding-top: 20px;
-        }
-
-        .text_price h1{
-            width: 60px;
-            color: grey;
-            font-size: 18px;
-            padding-top: 12px;
-        }
-
-        .price{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-top: 20px;
-        }
-
-        .price h1{
-            font-size: 30px;
-            width: 160px;
-            font-style: italic;
-        }
-
-        .desconto{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-top: 32px;
-        }
-
-        .desconto h1{
-            font-size: 14px;
-            background: #FFA500;
-            font-style: italic;
-        }
-
-        .colsizqnt{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-left: 40px;
-            padding-top: 20px;
-            color: grey;
-        }
-
-        .colsizqnt h1{
-            width: 100px;
-            color: grey;
-            font-size: 18px;
-            padding-top: 12px;
-        }
-
-        .inputnumb{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-top: 32px;
-        }
-
-        .inputnumb input{
-            width: 30px;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .color{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-left: 40px;
-            padding-top: 20px;
-            color: grey;
-        }
-
-        .color h1{
-            width: 40px;
-            color: grey;
-            font-size: 18px;
-            padding-top: 12px;
-        }
-
-        .inputcol{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-top: 32px;
-        }
-
-        .inputcol input{
-            width: 30px;
-        }
-
-        .buybut{
-            display: table-cell;
-            float: left;
-            width: auto;
-            padding-top: 60px;
-            padding-left: 50px;
-        }
-
-        .buybut button{
-            width: 600px;
-            font-weight: bold;
-            font-size: 18pt;
-            font-style: italic;
-            background: #FFA500;
-            border: 1px solid black;
-            border-radius: 3px;
-            text-align: center;
-        }
-
-        .buybut button:hover{
-            cursor: pointer;
-            background: rgb(243, 159, 2);
-        }
-
-        .terms{
-            display: table-cell;
-            float: left;
-            padding-top: 5px;
-            width: 700px;
-            text-align: center;
-        }
-
-        .terms a{
-            color: gray;
-            text-decoration: none; 
-        }
-
-        .terms a:hover{
-            color: rgb(109, 109, 109);
-        }
-
-        .otherprod{
-            text-align: center;
-            font-size: 12px;
-            padding-top: 40px;
-        }
-
-       @media screen and (max-width: 800px){
-            .show-menu-btn,.hide-menu-btn{
-                display: block;
-            }
-            .menu{
-                position: fixed;
-                width: 100%;
-                height: 100vh;
-                background: #FFF30E;
-                right: -100%;
-                top: 0;
-                text-align: center;
-                padding: 80px 0;
-                line-height: normal;
-                transition: 0.7s;
-            }
-            .menu a{
-                display: block;
-                padding: 20px;
-            }
-            .hide-menu-btn{
-                position: absolute;
-                top: 40px;
-                right: 40px;
-            }
-            #chk:checked ~ .menu{
-                right: 0;
-            }
-            .image{
-                max-width: 120px;
-                padding-left: 10px;
-            }
-
-            .title h1{
-                max-width: 200px;
-                font-size: 12px;         
-            }
-       }
-    </style>
+    <title>Produto</title>
 </head>
 <body>
     <!--Navbar-->
@@ -328,9 +33,6 @@
                 <i class="fa fa-times"></i>
             </label>
         </ul>
-    </div>
-    <div class="content">
-
     </div>
     <!--Container-->
     <div class="container">    
@@ -383,15 +85,67 @@
         <div class="terms">
             <a href="#">Termos e condições do usuário.</a>
         </div>
-        <!--Comments-->
-    
     <!--Container Close-->
         </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+            <div class="inner-footer">
+                <div class="footer-items dev">
+                    <h1 class="h1">Market System</h1>
+                    <p class="p">
+                        Hildago Junior Team BETA
+                    </p class="p">
+                </div>
     
-    <div class="otherprod">
-        <h1>Produtos relacionados</h1>
-    </div>
-    <!--Container-->
-    </div>
+                <div class="footer-items">
+                    <h2 class="h2 dev">Navegação</h2>
+                    
+                    <div class="border"></div>
+    
+                    <ul class="ul">
+                        <a href="#"><li>Inico</li></a>
+                        <a href="#"><li>Produtos</li></a>
+                        <a href="#"><li>Preços</li></a>
+                        <a href="#"><li>Localização</li></a>
+                        <a href="#"><li>Fale conosco</li></a>
+                    </ul>
+                </div>
+    
+                <div class="footer-items">
+                    <h2 class="h2 dev">Desenvolvedores</h2>
+                    
+                    <div class="border"></div>
+    
+                    <ul class="ul">
+                        <li class="dev">Adrian Jaquier</li>
+                        <li class="dev">Gabriel Ragonha</li>
+                        <li class="dev">Joaby Oliveira</li>
+                        <li class="dev">Nicolas Alves</li>
+                    </ul>
+                </div>
+    
+                <div class="footer-items">
+                    <h2 class="h2 dev">Contato</h2>
+                    
+                    <div class="border"></div>
+    
+                    <ul class="ul">
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i>Av. Castro Alves, Somenzari</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i>(xx)xxxxx-xxxx</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>arnaldo@hidalgojunior.com.br</li>
+                    </ul>
+    
+                    <div class="social-media">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="footer-bottom dev">
+                Copyright &copy; Hidalgo Junior Todos os direitos reservados.
+            </div>
+        </div>
 </body>
 </html>

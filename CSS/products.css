@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+    width: 1100px;
+    max-height: auto;
+    margin: auto;
+    padding-bottom: 200px;
+}
+
+.conteudo{
+    display: table;
+    margin-top: 20px;
+}
+
+.image{
+     display: table-cell;
+     float: left;
+     max-width: 400px;
+     
+}
+
+.image img{
+ max-width: 100%;
+ max-height: auto;
+ border: rgb(185, 185, 185) solid 1.5px;
+}
+
+.title{
+     display: table-cell;
+     float: left;
+     width: auto;
+     margin-left: 40px;
+}
+
+.title h1{
+    max-width: 660px;
+    font-size: 18pt;
+}
+
+.desc{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-left: 40px;
+     padding-top: 20px;
+     padding-bottom: 20px;
+     color: grey;
+ }
+
+ .desc p{
+     width: 660px;
+     font-size: 16px;
+ }
+
+ .text_price{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-left: 40px;
+     padding-top: 20px;
+ }
+
+ .text_price h1{
+     width: 60px;
+     color: grey;
+     font-size: 18px;
+     padding-top: 12px;
+ }
+
+ .price{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-top: 20px;
+ }
+
+ .price h1{
+     font-size: 30px;
+     width: 160px;
+     font-style: italic;
+ }
+
+ .desconto{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-top: 32px;
+ }
+
+ .desconto h1{
+     font-size: 14px;
+     background: #FFA500;
+     font-style: italic;
+ }
+
+ .colsizqnt{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-left: 40px;
+     padding-top: 20px;
+     color: grey;
+ }
+
+ .colsizqnt h1{
+     width: 100px;
+     color: grey;
+     font-size: 18px;
+     padding-top: 12px;
+ }
+
+ .inputnumb{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-top: 32px;
+ }
+
+ .inputnumb input{
+     width: 30px;
+     font-size: 14px;
+     font-weight: bold;
+ }
+
+ .color{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-left: 40px;
+     padding-top: 20px;
+     color: grey;
+ }
+
+ .color h1{
+     width: 40px;
+     color: grey;
+     font-size: 18px;
+     padding-top: 12px;
+ }
+
+ .inputcol{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-top: 32px;
+ }
+
+ .inputcol input{
+     width: 30px;
+ }
+
+ .buybut{
+     display: table-cell;
+     float: left;
+     width: auto;
+     padding-top: 60px;
+     padding-left: 50px;
+ }
+
+ .buybut button{
+     width: 600px;
+     font-weight: bold;
+     font-size: 18pt;
+     font-style: italic;
+     background: #FFA500;
+     border: 1px solid black;
+     border-radius: 3px;
+     text-align: center;
+ }
+
+ .buybut button:hover{
+     cursor: pointer;
+     background: rgb(243, 159, 2);
+ }
+
+ .terms{
+     display: table-cell;
+     float: left;
+     padding-top: 5px;
+     width: 700px;
+     text-align: center;
+ }
+
+ .terms a{
+     color: gray;
+     text-decoration: none; 
+ }
+
+ .terms a:hover{
+     color: rgb(109, 109, 109);
+ }
