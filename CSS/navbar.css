@@ -4,6 +4,10 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+h2.logo{
+    font-family: 'Roboto'
+}
+
 .header{
     height: 100px;
     background: #FFF30E;

@@ -193,3 +193,7 @@
  .terms a:hover{
      color: rgb(109, 109, 109);
  }
+
+h2.logo{
+    font-family: 'Roboto';
+}
