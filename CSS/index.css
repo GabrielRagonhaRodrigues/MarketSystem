@@ -1,0 +1,12 @@
+img{
+    width: 100px;
+}
+.carousel .slide{
+    width: 18rem;    
+}
+.container{
+    /* display: inline-block; */
+}
+.card-group{
+    /* padding: 20px; */
+}
