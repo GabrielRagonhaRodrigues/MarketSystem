@@ -78,7 +78,7 @@
 }
 
 .ul a:hover{
-    color: #ff9800;
+    color: #FFA500;
 }
 
 .ul li{
@@ -86,7 +86,7 @@
     height: 25px;
 }
 
-.dev{
+.no-select{
     cursor: default;
 }
 

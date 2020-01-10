@@ -90,13 +90,4 @@
      #chk:checked ~ .menu{
          right: 0;
      }
-     .image{
-         max-width: 120px;
-         padding-left: 10px;
-     }
-
-     .title h1{
-         max-width: 200px;
-         font-size: 12px;         
-     }
 }
