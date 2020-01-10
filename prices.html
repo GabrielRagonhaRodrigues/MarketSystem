@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Preços</title>
+
     <!-- GOOGLE FONTS -->
-      <!-- Source Sans Pro -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-      <!-- Roboto -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+      
+    
+    <!-- jQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- POPPER.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    
+    <!-- BOOTSTRAP.JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -18,7 +24,7 @@
         <!-- Navbar style -->
     <link rel="stylesheet" href="css/navbar.css">
         <!-- Price style -->
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/price.css">
     
     <!-- PAGE FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
@@ -32,14 +38,14 @@
         <a href="index.html">
             <img src="./images/market_system.png" alt="market system" width="100" height="100" class="icon">
         </a>   
-        <h2 class="logo">MarketSystem</h2>
+        <h2 class="logo">MARKETSYSTEM</h2>
         <input type="checkbox" id="chk">
         <label for="chk" class="show-menu-btn">
             <i class="fa fa-th-large"></i>
         </label>
         <ul class="menu">
-            <a href="index.html">Início</a>
-            <a href="products.html">Produtos</a>
+            <a href="index.html">Página Inicial</a>
+            <a href="prices.html">Preços</a>
             <a href="location.html">Localização</a>
             <a href="help.html">Fale conosco</a>
             <label for="chk" class="hide-menu-btn">
@@ -50,36 +56,60 @@
 
     <div class="container-fluid">
         <div class="card-columns">
-            <div class="row col-lg-10">
                 <div class="card">
-                    <a href="products.html">
-                        <img class="card-img-top" src="cell.jpg" alt="">
+                    <a href="product/cell.html">
+                        <img class="card-img-top" src="images/imgproduct/cell.jpg" alt="">
                     </a>
                     <div class="card-body">
                         <h5>Xiaomi Mi Note 10</h5>
+                        <h6>R$ 1500,00</h6>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="card">
-                    <a href="products.html">
-                        <img class="card-img-top" src="cell.jpg" alt="">
+                    <a href="product/cell2.html">
+                        <img class="card-img-top" src="images/imgproduct/cell2.jpg" alt="">
                     </a>
                     <div class="card-body">
-                        <h5>Xiaomi Mi Note 10</h5>
+                        <h5>Xiaomi Redmi Note 7</h5>
+                        <h6>R$ 979,97</h6>
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="card">
-                    <a href="products.html">
-                        <img class="card-img-top" src="cell.jpg" alt="">
+                    <a href="product/desk.html">
+                        <img class="card-img-top" src="images/imgproduct/desk.jpg" alt="">
                     </a>
                     <div class="card-body">
-                        <h5>Xiaomi Mi Note 10</h5>
+                        <h5>Computador XPS 8930</h5>
+                        <h6>R$ 979,97</h6>
                     </div>
                 </div>
-            </div>
+                <div class="card">
+                    <a href="product/laptop.html">
+                        <img class="card-img-top" src="images/imgproduct/notebook.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5>Dell G 15</h5>
+                        <h6>R$ 7890,00</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="product/tablet.html">
+                        <img class="card-img-top" src="images/imgproduct/tablet.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5>Samsung Galaxy Tab A</h5>
+                        <h6>R$ 899,00</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="product/smart.html">
+                        <img class="card-img-top" src="images/imgproduct/applewatch.jpg" alt="">
+                    </a>
+                    <div class="card-body">
+                        <h5>Apple Watch Series 5</h5>
+                        <h6>R$ 7890,00</h6>
+                    </div>
+                </div>
         </div>
     </div>
 
