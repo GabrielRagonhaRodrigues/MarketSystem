@@ -17,10 +17,10 @@
 }
 
 .image{
-    display: table-cell;
-    float: left;
-    max-width: 400px;
-     
+   display: table-cell;
+   float: left;
+   max-width: 400px;
+   max-height: 400px;
 }
 
 .image img{
@@ -170,8 +170,11 @@
  }
 
  .buy-button button:hover{
-    cursor: pointer;
-    background: rgb(243, 159, 2);
+   cursor: pointer;
+ }
+
+ .buy-button button:active{
+   background: rgb(243, 159, 2);
  }
 
  .terms{
@@ -200,7 +203,7 @@
     }
 
     .container{
-        width: 600px;
+        width: 700px;
     }
 
     .title, .description, .price{
@@ -212,7 +215,7 @@
     }
 
     .title h1, .description p{
-        max-width: 300px;
+        max-width: 400px;
         font-size: 16px;         
     }
 
@@ -305,5 +308,3 @@
    }
 
  }
-
-
