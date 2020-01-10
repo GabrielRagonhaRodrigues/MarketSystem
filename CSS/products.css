@@ -188,6 +188,7 @@
  }
 
  .terms a:hover{
+<<<<<<< HEAD
     color: rgb(109, 109, 109);
  }
 
@@ -305,3 +306,11 @@
    }
 
  }
+=======
+     color: rgb(109, 109, 109);
+ }
+
+h2.logo{
+    font-family: 'Roboto';
+}
+>>>>>>> 5d8b277d559a4f6e8dbee9e60cead58f27240fc2

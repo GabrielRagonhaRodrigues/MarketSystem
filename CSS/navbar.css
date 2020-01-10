@@ -4,6 +4,10 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+h2.logo{
+    font-family: 'Roboto'
+}
+
 .header{
     height: 100px;
     background: #FFF30E;
@@ -90,4 +94,19 @@
      #chk:checked ~ .menu{
          right: 0;
      }
+<<<<<<< HEAD
+=======
+     .image{
+         max-width: 120px;
+         padding-left: 10px;
+     }
+
+     .title h1{
+         max-width: 200px;
+         font-size: 12px;         
+     }
+     .container{
+         
+     }
+>>>>>>> 5d8b277d559a4f6e8dbee9e60cead58f27240fc2
 }

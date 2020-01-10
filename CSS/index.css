@@ -10,3 +10,8 @@ img{
 .card-group{
     /* padding: 20px; */
 }
+.row{
+    /* padding: 0; */
+
+    margin: 0px 0px 10px 0px;
+}

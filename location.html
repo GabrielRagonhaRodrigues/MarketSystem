@@ -7,8 +7,10 @@
     <title>Localização</title>
 
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+      <!-- Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+      <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
@@ -19,6 +21,9 @@
 
     <!-- PAGE FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
 <body>
@@ -44,7 +49,7 @@
     
     <!--Content Location-->
     <div class="content">
-        
+                
         <div class="group">
             <img src="images/Grupito.jpg" alt="">
         </div>
@@ -63,9 +68,11 @@
 
                 <form action="http://maps.google.com/maps" method="get" target="_blank">
                     <label for="saddr">Coloque sua Localização <br></label>
-                    <input type="text" name="saddr" />
                     <input type="hidden" name="daddr" value="Av. Castro Alves, 62" />
-                    <input type="submit" value="Obter Direções" />
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="saddr" />
+                        <input class="btn btn-primary" type="submit" value="Obter Direções" />
+                    </div>
                 </form>
 
             </p>
