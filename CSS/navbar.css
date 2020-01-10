@@ -1,11 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-h2.logo{
-    font-family: 'Roboto'
 }
 
 .header{
@@ -102,8 +97,5 @@ h2.logo{
      .title h1{
          max-width: 200px;
          font-size: 12px;         
-     }
-     .container{
-         
      }
 }
