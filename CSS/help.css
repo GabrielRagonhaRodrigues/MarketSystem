@@ -84,6 +84,7 @@ h1{
     padding: 0;
     margin-bottom: 10px;
     margin-top: 10px;
+    position: relative;
 }
 
 /* .row{
@@ -127,8 +128,3 @@ span{
     color: red;
 }
 
-.jumbotron{
-    /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.178);
-    border: 2px solid rgb(255, 242, 0);
-    padding: 50px; */
-}

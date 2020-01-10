@@ -7,8 +7,8 @@ img{
 .container{
     /* display: inline-block; */
 }
-.card-group{
-    /* padding: 20px; */
+.li{
+    background-color: blue;
 }
 .row{
     /* padding: 0; */
