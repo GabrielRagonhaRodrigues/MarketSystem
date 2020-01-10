@@ -48,8 +48,6 @@
     line-height: 100px;
 }
 
-.menu a:hover,
-.show-menu-btn:hover,
 .hide-menu-btn:hover{
      color: white;
      background: black;
@@ -89,6 +87,7 @@
      #chk:checked ~ .menu{
          right: 0;
      }
+
      .image{
          max-width: 120px;
          padding-left: 10px;
