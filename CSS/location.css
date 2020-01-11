@@ -2,12 +2,14 @@
     margin-top: 50px;
     width: 400px;
     height: 400px;
+    border: 2px solid black;
 }
 
 .loc {
     text-align: center;
     margin-left: 30px;
-    margin-top: 30px;
+    margin-top: 45px;
+    margin-bottom: 40px;
     font-size: 22px;
 }
 
