@@ -1,7 +1,4 @@
-*{
-   
 
-}
 /* 
 
 form>input,textarea {
@@ -92,7 +89,7 @@ h1{
 } */
 
 .container{
-    margin-top: 20px;
+    margin: 20px auto 0px auto;
 }
 
 label{

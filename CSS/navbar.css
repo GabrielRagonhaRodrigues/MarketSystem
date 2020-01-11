@@ -59,7 +59,7 @@
     z-index: -1111;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 835px){
      .show-menu-btn,.hide-menu-btn{
          display: block;
      }
@@ -96,5 +96,8 @@
      .title h1{
          max-width: 200px;
          font-size: 12px;         
+     }
+     h2.logo{
+         display: none;
      }
 }
